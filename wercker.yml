@@ -27,7 +27,7 @@ build:
             code: |
               go build
 
-	- script:
-	    name: copy files to wercker output
-	    code: |
-	      cp -R ./ ${WERCKER_OUTPUT_DIR}
+        - script:
+            name: copy files to wercker output
+            code: |
+              cp -R ./ ${WERCKER_OUTPUT_DIR}
