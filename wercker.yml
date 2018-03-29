@@ -1,9 +1,9 @@
-box: goland
+box: golang
 
 dev:
     steps:
         - setup-go-workspace:
-            package-dir: github.com/Test
+            package-dir: github.com/aafrasht/Test
 
         - script:
           name: env
@@ -16,7 +16,7 @@ dev:
 build:
     steps:
         - setup-go-workspace:
-            package-dir: github.com/Test
+            package-dir: github.com/aafrasht/Test
 
         - script:
             name: env
@@ -26,3 +26,4 @@ build:
             name: go build
             code: |
               go build
+
