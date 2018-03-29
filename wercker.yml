@@ -1,0 +1,28 @@
+box: goland
+
+dev:
+    steps:
+        - setup-go-workspace:
+            package-dir: github.com/Test
+
+        - script:
+          name: env
+          code: env
+
+        - internal/watch:
+          code: go run wercker.go
+          reload: true
+
+build:
+    steps:
+        - setup-go-workspace:
+            package-dir: github.com/Test
+
+        - script:
+            name: env
+            code: env
+
+        - script:
+            name: go build
+            code: |
+              go build
