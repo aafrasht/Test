@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Go Wercker2")
+	fmt.rintln("Go Wercker2")
 }
