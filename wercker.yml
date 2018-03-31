@@ -41,4 +41,3 @@ deploy:
          port: "80"
          tag: part2
          repository: grandnexus123/get-started
-         registry: docker.io
