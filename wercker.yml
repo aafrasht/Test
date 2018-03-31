@@ -37,5 +37,6 @@ deploy:
      - internal/docker-push:
          username: $DOCKER_USERNAME
          password: $DOCKER_PASSWORD
+         cmd: ${WERCKER_OUTPUT_DIR}/wercker.out
          tag: latest
          repository: grandnexus123/wercker_repository
