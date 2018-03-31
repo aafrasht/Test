@@ -30,7 +30,7 @@ build:
         - script:
             name: copy files to wercker output
             code: |
-              cp -R *.out ${WERCKER_OUTPUT_DIR}
+              cp ./*.out ${WERCKER_OUTPUT_DIR}
 
 deploy:
    steps:
