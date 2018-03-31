@@ -38,4 +38,4 @@ deploy:
          username: $DOCKER_USERNAME
          password: $DOCKER_PASSWORD
          tag: latest
-         repository: wercker_repository
+         repository: grandnexus123/wercker_repository
