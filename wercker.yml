@@ -25,12 +25,12 @@ build:
         - script:
             name: go build
             code: |
-              go build wercker.out
+              go build -o wercker.out wercker.go
 
         - script:
             name: copy files to wercker output
             code: |
-              cp ./*.out ${WERCKER_OUTPUT_DIR}
+              cp wercker.out ${WERCKER_OUTPUT_DIR}
 
 deploy:
    steps:
