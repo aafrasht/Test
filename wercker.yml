@@ -38,7 +38,7 @@ deploy:
          username: $DOCKER_USERNAME
          password: $DOCKER_PASSWORD
          cmd: /pipeline/source/hello
-         port: "8080"
+         port: "80"
          tag: part2
          repository: grandnexus123/get-started
-         registry: https://hub.docker.com
+         registry: https://registry.hub.docker.com
