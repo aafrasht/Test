@@ -37,5 +37,5 @@ deploy:
      - internal/docker-push:
          username: $DOCKER_USERNAME
          password: $DOCKER_PASSWORD
-         tag: part2
-         repository: grandnexus123/get-started
+         tag: latest
+         repository: wercker_repository
