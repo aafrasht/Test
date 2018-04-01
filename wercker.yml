@@ -30,7 +30,7 @@ build:
         - script:
             name: copy files to wercker output
             code: |
-              cp wercker.out /usr/bin/
+              cp -R ./ ${WERCKER_OUTPUT_DIR}
 
 deploy:
    steps:
@@ -42,6 +42,6 @@ deploy:
      - internal/docker-push:
          username: $DOCKER_USERNAME
          password: $DOCKER_PASSWORD
-         cmd: /usr/bin/wercker.out
+         cmd: /pipeline/source/Test
          tag: latest
          repository: grandnexus123/wercker_repository
